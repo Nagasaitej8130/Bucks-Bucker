@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to your Bucks Bucker account</title>
+    <style>
+        h1{
+            align-items: center;
+        }
+        h2{
+            background-color:#6fb1eb;
+            color: #000000;
+            align-items: center;
+            font-weight: 600;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            font-family:'Times New Roman', Times, serif;
+            max-width: 400px;
+            width: 100%;
+            background:  #6fb1eb;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgb(0, 0, 0);
+            flex-wrap: wrap;
+            
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color:#0059ff;
+            color: #00ffe5;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color:  #2196F3;
+            width: 100%;
+            
+        }
+        .error {
+            color: rgb(255, 0, 0);
+            font-size: 14px;
+        }
+ 
+        
+        #username1,#password1{
+            background-color: #6fb1eb;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bucks Bucker...</h2>
+        <h2>Login</h2>
+        <h2></h2>
+        <form id="registrationForm" action="dataretriving.php" method="post">
+            <div class="form-group" id="username">
+                <label for="username">username:</label>
+                <input type="text" id="username1" name="username" required>
+                <div class="error" id="usernameError"></div>
+            </div>
+            
+            <div class="form-group" id="password">
+                <label for="password">password:</label>
+                <input type="password" id="password1" name="password" required>
+                <div class="error" id="passwordError"></div>
+            </div><br>           
+            
+            <div class="form-group">
+                <button type="submit" action="dashboardsection.html" >Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

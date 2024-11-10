@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucks Bucker - Current Balance</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        :root {
+            --bg-primary: #eeebff; /* Light Blue */
+            --bg-secondary: #a5cff7; /* Soft Green */
+            --color-primary: #0015ff; /* Medium Green */
+            --color-secondary: #1E88E5; /* Vibrant Blue */
+            --text-primary: #000000; /* Black for readability */
+            --text-secondary: #000000; /* White for contrast */
+            --accent-green: #000000; /* Fresh Green */
+            --accent-blue: #2196F3; /* Bright Blue */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: var(--bg-secondary);
+            padding: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+            color: var(--color-secondary);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-bottom: 1rem;
+        }
+
+        nav ul li a {
+            display: flex;
+            align-items: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+        nav ul li a i {
+            margin-right: 0.5rem;
+        }
+
+        .content {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-primary);
+        }
+
+        th {
+            font-weight: bold;
+            color: var(--text-secondary);
+        }
+
+        tfoot {
+            font-weight: bold;
+            background-color: var(--bg-secondary);
+        }
+
+        footer {
+            background-color: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            padding: rem;
+            text-align: center;
+            border-bottom: 0px solid var(--color-primary);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0.5rem 0 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        .footer-links a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+            .content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i data-feather="dollar-sign"></i>
+                <h1>Bucks Bucker</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboardsection.html"><i data-feather="home"></i> Dashboard</a></li><br>
+                    <li><a href="transations.html"><i data-feather="list"></i> Transactions</a></li><br>
+                    <li><a href="history.html"><i data-feather="clock"></i> History</a></li><br>
+                    <li><a href="current_balance.html"><i data-feather="credit-card"></i> Current Balance</a></li><br>
+                    <li><a href="budgetplan.html"><i data-feather="pie-chart"></i> Budget Plan</a></li><br>
+                    <li><a href="wallet.html"><i data-feather="briefcase"></i> Wallet</a></li><br>
+                    <li><a href="settings.html"><i data-feather="settings"></i> Settings</a></li><br>
+                    <li><a href="Myaccount.html"><i data-feather="user"></i> My Account</a></li><br>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <header>
+                <h2>Current Balance</h2>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Medium</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Google Pay</td>
+                        <td>2,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>PhonePe</td>
+                        <td>1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Paytm</td>
+                        <td>750.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>SBI Joint account</td>
+                        <td>300.00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>UCO Bank</td>
+                        <td>5,000.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Amount</td>
+                        <td>9,550.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <footer>
+                <div class="footer-container">
+                    <p>&copy; 2024 Bucks Bucker. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#terms-of-service">Terms of Service</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

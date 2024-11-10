@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup to Bucks Bucker </title>
+    <style>
+        h1{
+            align-items: center;
+        }
+        h2{
+            background-color:#6fb1eb;
+            color: #000000;
+            align-items: center;
+            font-weight: 600;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            font-family:'Times New Roman', Times, serif;
+            max-width: 400px;
+            width: 100%;
+            background:  #6fb1eb;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgb(0, 0, 0);
+            flex-wrap: wrap;
+            
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color:#0059ff;
+            color: #00ffe5;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color:  #2196F3;
+            width: 100%;
+            
+        }
+        .error {
+            color: rgb(255, 0, 0);
+            font-size: 14px;
+        }
+ 
+        input[type="date"] {
+                /*background-color:;*/
+                color: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 4px;
+                padding: 10px;
+                font-size: 16px;
+        }
+ 
+        input[type="date"]::-webkit-calendar-picker-indicator {
+                background-color: #f2e8e82b;
+                border-radius: 50%;
+                padding: 5px;
+        }
+        #username,#number,#email,#password,#confirmpassword,
+        #dob,#gender,#address,#country,#uploadfile,#modeofpayment
+        ,#declaration,#upipin{
+            color: #000000;
+        }
+        
+        #username1,#email1,#number1,#password1,#confirm_password1,#dob1,#address1,#country1,#upipin1{
+            background-color: #6fb1eb;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bucks Bucker...</h2>
+        <h2>SignUP</h2>
+        <h2></h2>
+        <form id="registrationForm" action="validate.php" method="post">
+            <div class="form-group" id="username">
+                <label for="username">username:</label>
+                <input type="text" id="username1" name="username" required>
+                <div class="error" id="usernameError"></div>
+            </div>
+            <div class="form-group" id="number">
+                <label for="number">Mobile number:</label>
+                <input type="tel" id="number1" placeholder="phone number" name="number" required>
+                <div class="error" id="NumberError"></div>
+            </div>
+            <div class="form-group" id="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email1" name="email" required>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group" id="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password1" name="password" required>
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-group" id="confirmpassword">
+                <label for="confirm_password" >Confirm Password :</label>
+                <input type="password" id="confirm_password1" name="confirm_password" required>
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-group" id="dob">
+                <label for="dob" >Date of Birth</label>
+                <input type="date" id="dob1" name="dob" required>
+                <div class="error" id="dobError"></div>
+            </div>
+           
+            <br>
+ 
+            <div class="form-group" id="address">
+                <label for="address" >Address :</label>
+                <input type="textarea" id="address1" name="address" rows="4" cols="50" required>
+                <div class="error" id="addressError"></div>
+            </div>
+ 
+            <div class="form-group" id="country">
+                <label for="country" >Country :</label>
+                <input type="select" id="country1" name="country" required>
+                <div class="error" id="countryError"></div>
+            </div>
+            
+            <br>
+            <div id="upi pin">
+                <label for="quantity" id="upipin1">Enter UPI Pin:</label>
+                <input type="password" id="upipin1" name="UPI" min="4" max="10" value="">
+            </div>
+            <br>
+            <div id="declaration"> 
+                <input type="checkbox">
+                <label for="check">I here by decalre that all the details I provided here are correct.</label>
+            </div>
+            <br> 
+            
+
+<br>           
+            
+            <div class="form-group">
+                <button type="submit" ><a href="loginpage.html">Submit</a></button>
+            </div>
+        </form>
+    </div>
+ 
+    
+ 
+</body>
+</html>
